@@ -1,0 +1,111 @@
+.project{
+    padding: 110px 85px;
+    background: #000;
+    color: #fff;
+    margin-top: -20px;
+}
+
+.project .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+}
+.info h3{
+    font-size: 35px;
+}
+
+.project .header button{
+    padding: 1rem 2.5rem;
+    color: white;
+    background-color: #bf40bf;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project .project-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project .project-items .item{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.project .project-items .item:hover{
+    transform: scale(0.9);
+}
+
+.project .project-items .item img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.project .project-items .item .info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+.project .project-items .item .info h4{
+    font-size: 20px;
+    color: #000;
+}
+.project .project-items .item .info p{
+    font-size: 13px;
+    color: #666;
+}
+.project .project-items .item .info a{
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #666;
+}
+.project .project-items .item .info a i{
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 480px){
+    .project{
+        margin-top: 250px;
+        padding: 70px 35px;
+    }
+    .info h3{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .project .header button{
+        padding: 0.3rem 1.5rem;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+    .project .header{
+        flex-direction: column;
+        margin-left: -40px;
+    }
+    .project .project-items{
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+    .project .project-items .item{
+        width: 100%;
+    }
+}

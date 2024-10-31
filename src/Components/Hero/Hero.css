@@ -1,0 +1,102 @@
+.hero{
+    display: grid;
+    height: 120vh;
+    place-items: center;
+    background-color: #f9f9f9;
+    border-radius: 40px;
+    width: 90%;
+    justify-self: center;    
+}
+.hero .hero_header{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+.hero_header span{
+    color: #bf40bf;
+}
+.hero p{
+    font-size: 20px;
+    text-align: center;
+}
+.hero button{
+    padding: 1rem 2.5rem;
+    color: white;
+    background-color: #bf40bf;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.hero button:hover{
+    transform: translateY(-5px);
+}
+.how-it-works {
+    text-align: center;
+    padding: 16px 20px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.how-it-works p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.hero_icons{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.step {
+    flex: 1;
+    max-width: 250px;
+    margin: 40px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.step:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+@media screen and (max-width: 480px){
+    .step img{
+        display: none;
+    }
+    .steps {
+        display: flex;
+        flex-direction: column;
+    }
+    .steps .step h3{
+        font-size: 20px;
+    }
+    .step{
+        margin: 0;
+    }
+}
